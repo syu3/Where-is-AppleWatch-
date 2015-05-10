@@ -1,0 +1,756 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0221F620A205613A8F8E5686 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31364E081D1918868A7D3502 /* Foundation.framework */; };
+		024D5AD7E2DE6FB9A8AD29FE /* BFTask.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6845FB880612618D94B82B /* BFTask.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0901C98C5FB81F14C70D6655 /* BFTaskCompletionSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D06EC8EE229DCD1A92A6537 /* BFTaskCompletionSource.h */; };
+		09FF420BEF406F6EE624D271 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DF17B91E66ACEFFC469A695 /* CoreGraphics.framework */; };
+		0DE71D37658DDA632BD510A6 /* PFObject+Subclass.h in Headers */ = {isa = PBXBuildFile; fileRef = 81397254F76C6F4402E8198F /* PFObject+Subclass.h */; };
+		104C01073F0E3F1B462D34BA /* Bolts.m in Sources */ = {isa = PBXBuildFile; fileRef = 86CD5C3940A10B010C325E35 /* Bolts.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		121E4EE030C8B3E058580380 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A7828419DC6FCB0BF9E3DC4 /* Security.framework */; };
+		141E0143544CB7AE5C59FF7F /* Pods-applewatch-Parse-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D570E95ED561FA854E4F5D7 /* Pods-applewatch-Parse-dummy.m */; };
+		142CF9077938695BABE4F5D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31364E081D1918868A7D3502 /* Foundation.framework */; };
+		1E8B6E5BCF3807BC89CAA041 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F103F9AA743F97E2B6F7651B /* CFNetwork.framework */; };
+		2C93D325D07709A9E5CC58EE /* Bolts.h in Headers */ = {isa = PBXBuildFile; fileRef = B169462E531E59176C247E9F /* Bolts.h */; };
+		2E6CE6E0DC4CA725DE8F7EE9 /* PFRole.h in Headers */ = {isa = PBXBuildFile; fileRef = BBEB3ADE01D5E9F5E443B380 /* PFRole.h */; };
+		30B2EA0D9F4AB39D77469954 /* PFObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 5899A9DF648C610FFC9061F4 /* PFObject.h */; };
+		39072D85A98CAAEA5672F124 /* Empty.m in Sources */ = {isa = PBXBuildFile; fileRef = E83F51F4DF272AAC25750179 /* Empty.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		428216B1E1DF446FE47B1C91 /* PFInstallation.h in Headers */ = {isa = PBXBuildFile; fileRef = 64212AF91C2A57E7D7088F1F /* PFInstallation.h */; };
+		60F3C057AB60FD7A7589B500 /* BFExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFE10414F748F0A7E90DCBE /* BFExecutor.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6161792F7755927943DF450A /* PFPush.h in Headers */ = {isa = PBXBuildFile; fileRef = 302FC2521411571F9DC3DF34 /* PFPush.h */; };
+		61DA07D2B02BA64BD7A72495 /* PFNullability.h in Headers */ = {isa = PBXBuildFile; fileRef = 590958CAEF0CF2EAF559A876 /* PFNullability.h */; };
+		64036D8A2B772A188A31148C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58ED714048EB42178BEAF9B3 /* AudioToolbox.framework */; };
+		693EFF4F3295B19983ACBB16 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F436628EACEC1056CE2CE19 /* CoreLocation.framework */; };
+		70E8E541BE66E5723AC134A1 /* PFRelation.h in Headers */ = {isa = PBXBuildFile; fileRef = 131941599BD1207A64681AE3 /* PFRelation.h */; };
+		72963CC6C12C62152A44ADD0 /* Parse.h in Headers */ = {isa = PBXBuildFile; fileRef = CBC0B3A272D72A68E6DE8435 /* Parse.h */; };
+		797D8590311A233B6D16BB70 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A35A95C6573D00F4B22D786 /* StoreKit.framework */; };
+		7CFD5830B3C0DEC319B3EF1C /* PFCloud.h in Headers */ = {isa = PBXBuildFile; fileRef = BCDA2DA3A00E61B99A3872BD /* PFCloud.h */; };
+		7D02F83257950CEC52EA30CA /* PFPurchase.h in Headers */ = {isa = PBXBuildFile; fileRef = 54498E4E0DF46764EB8099D3 /* PFPurchase.h */; };
+		7E94C334D9C1F5FCA6587A97 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CF747F5C6E6FE2C9C9C3219 /* SystemConfiguration.framework */; };
+		8C79CAFCE6E9B0617B5236F6 /* PFGeoPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 493A971DF2176F883D056F73 /* PFGeoPoint.h */; };
+		8F1C3146B5570A4A2CCB7D32 /* PFConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = E5467E3D24A978A22BA5EC03 /* PFConstants.h */; };
+		90FB7A5FA48F28AED6134640 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBC739254009B402CD32C4AB /* QuartzCore.framework */; };
+		9388EB2F27B9F0D66EEB8F98 /* Pods-applewatch-Bolts-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C0E4B24562C845F0AFC3DC /* Pods-applewatch-Bolts-dummy.m */; };
+		96F30B12526C78E3E7F1336F /* PFProduct.h in Headers */ = {isa = PBXBuildFile; fileRef = 81EC3946329B24A8DE6B59B9 /* PFProduct.h */; };
+		976B9384473109CB080C505D /* PFFile.h in Headers */ = {isa = PBXBuildFile; fileRef = F7B64E23835F63A1921603ED /* PFFile.h */; };
+		ABF34A22B8EDE880CD462A0C /* PF_Twitter.h in Headers */ = {isa = PBXBuildFile; fileRef = F388F4451365AB83146F471A /* PF_Twitter.h */; };
+		AE04BFA143C8697C61139B04 /* BoltsVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 995CA5B621332B1CDAA4EFA7 /* BoltsVersion.h */; };
+		B6A8F916AA0499E430A6D984 /* PFACL.h in Headers */ = {isa = PBXBuildFile; fileRef = 40E288ECFBB1408DC71D9799 /* PFACL.h */; };
+		B711BB2AD4BF28BF6CC9C79D /* PFAnalytics.h in Headers */ = {isa = PBXBuildFile; fileRef = 201E15F59FFD3D63000FE9E4 /* PFAnalytics.h */; };
+		D894535AD71D69886624C235 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A2510FB59CF54ECEE300C28 /* MobileCoreServices.framework */; };
+		D97BDF7BE33E9D21C1A04091 /* BFTaskCompletionSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5A5E05C19F9773EB18AFE8 /* BFTaskCompletionSource.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DAA0343FF2C7CA25717E3F81 /* PFSubclassing.h in Headers */ = {isa = PBXBuildFile; fileRef = 15BBF5CB08B2E7BD14A65DC5 /* PFSubclassing.h */; };
+		DAF7FBB39734262FB893EF95 /* PFUser.h in Headers */ = {isa = PBXBuildFile; fileRef = A92387FC256D7D8A4A423DCE /* PFUser.h */; };
+		DB284FB4B78CC3186CFA9D36 /* PFSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 8289B557E8546386615EAB72 /* PFSession.h */; };
+		DC5AD67C5C1A1C7ECE202E2B /* PFConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = DA8C7E1E226147C8EC5AB165 /* PFConfig.h */; };
+		DF335AB0551DF593E10E04F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31364E081D1918868A7D3502 /* Foundation.framework */; };
+		E6489D0A1B157CB40F436337 /* PFAnonymousUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A0E6C5044B0762B4605CEE9 /* PFAnonymousUtils.h */; };
+		EAA033189701DFA3CB807C44 /* BFTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E5C6AD1E11BCF1387AC1E29 /* BFTask.h */; };
+		ECEE4E67A3650BD4E269125B /* Pods-applewatch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 86742924B93D72136419A594 /* Pods-applewatch-dummy.m */; };
+		EE1CC4F784EBD2E78B7F51AA /* PFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A3AE315C9E0B7FAA7AAEC94 /* PFNetworkActivityIndicatorManager.h */; };
+		F1C1F6933CE59F5191E4AEBC /* BFExecutor.h in Headers */ = {isa = PBXBuildFile; fileRef = F1254DC1CAFBBBB3BE2635F3 /* BFExecutor.h */; };
+		F7F4DBBBA6F3115D4DA84106 /* PFQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = DAA023EE904D1DE90B21FE00 /* PFQuery.h */; };
+		F85B374E38C9D170492BD94E /* PFTwitterUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 8650AF81EFDA496F87B8ADCB /* PFTwitterUtils.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		434A6A40242ECDAA0D1ADBD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F98CE52560C5DB59ED7DD37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C9B88A43FA703C3D459E8F5;
+			remoteInfo = "Pods-applewatch-Bolts";
+		};
+		5E33966442113A653161D38B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F98CE52560C5DB59ED7DD37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C9B88A43FA703C3D459E8F5;
+			remoteInfo = "Pods-applewatch-Bolts";
+		};
+		D84828D89062FAA5E429DB4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F98CE52560C5DB59ED7DD37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70F0C052C2513D32A5E75795;
+			remoteInfo = "Pods-applewatch-Parse";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		131941599BD1207A64681AE3 /* PFRelation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFRelation.h; path = Parse.framework/Headers/PFRelation.h; sourceTree = "<group>"; };
+		15BBF5CB08B2E7BD14A65DC5 /* PFSubclassing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFSubclassing.h; path = Parse.framework/Headers/PFSubclassing.h; sourceTree = "<group>"; };
+		1A35A95C6573D00F4B22D786 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
+		1A5A5E05C19F9773EB18AFE8 /* BFTaskCompletionSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFTaskCompletionSource.m; path = Bolts/Common/BFTaskCompletionSource.m; sourceTree = "<group>"; };
+		201E15F59FFD3D63000FE9E4 /* PFAnalytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFAnalytics.h; path = Parse.framework/Headers/PFAnalytics.h; sourceTree = "<group>"; };
+		2D570E95ED561FA854E4F5D7 /* Pods-applewatch-Parse-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-applewatch-Parse-dummy.m"; sourceTree = "<group>"; };
+		2E7DEA83D406D1EF02677533 /* Pods-applewatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-applewatch.release.xcconfig"; sourceTree = "<group>"; };
+		302FC2521411571F9DC3DF34 /* PFPush.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFPush.h; path = Parse.framework/Headers/PFPush.h; sourceTree = "<group>"; };
+		31364E081D1918868A7D3502 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3875702BC72D10FE852A9D12 /* Pods-applewatch-Parse-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-applewatch-Parse-prefix.pch"; sourceTree = "<group>"; };
+		3A3AE315C9E0B7FAA7AAEC94 /* PFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFNetworkActivityIndicatorManager.h; path = Parse.framework/Headers/PFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		3D06EC8EE229DCD1A92A6537 /* BFTaskCompletionSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFTaskCompletionSource.h; path = Bolts/Common/BFTaskCompletionSource.h; sourceTree = "<group>"; };
+		3E5C6AD1E11BCF1387AC1E29 /* BFTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFTask.h; path = Bolts/Common/BFTask.h; sourceTree = "<group>"; };
+		40E288ECFBB1408DC71D9799 /* PFACL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFACL.h; path = Parse.framework/Headers/PFACL.h; sourceTree = "<group>"; };
+		451867027DEAA0688BFFE96D /* Pods-applewatch-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-applewatch-environment.h"; sourceTree = "<group>"; };
+		493A971DF2176F883D056F73 /* PFGeoPoint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFGeoPoint.h; path = Parse.framework/Headers/PFGeoPoint.h; sourceTree = "<group>"; };
+		54498E4E0DF46764EB8099D3 /* PFPurchase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFPurchase.h; path = Parse.framework/Headers/PFPurchase.h; sourceTree = "<group>"; };
+		57A0CAFAFF311798577D7B6B /* Pods-applewatch-Parse.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-applewatch-Parse.xcconfig"; sourceTree = "<group>"; };
+		5899A9DF648C610FFC9061F4 /* PFObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFObject.h; path = Parse.framework/Headers/PFObject.h; sourceTree = "<group>"; };
+		58ED714048EB42178BEAF9B3 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		590958CAEF0CF2EAF559A876 /* PFNullability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFNullability.h; path = Parse.framework/Headers/PFNullability.h; sourceTree = "<group>"; };
+		5A2510FB59CF54ECEE300C28 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		5F436628EACEC1056CE2CE19 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		63C7698EBE3BBB6645708DAD /* libPods-applewatch-Parse.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-applewatch-Parse.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		64212AF91C2A57E7D7088F1F /* PFInstallation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFInstallation.h; path = Parse.framework/Headers/PFInstallation.h; sourceTree = "<group>"; };
+		6B0175FF01AB36B0EBFA13ED /* libParse.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libParse.a; sourceTree = "<group>"; };
+		7A0E6C5044B0762B4605CEE9 /* PFAnonymousUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFAnonymousUtils.h; path = Parse.framework/Headers/PFAnonymousUtils.h; sourceTree = "<group>"; };
+		7CF747F5C6E6FE2C9C9C3219 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		7DF17B91E66ACEFFC469A695 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		81397254F76C6F4402E8198F /* PFObject+Subclass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PFObject+Subclass.h"; path = "Parse.framework/Headers/PFObject+Subclass.h"; sourceTree = "<group>"; };
+		81EC3946329B24A8DE6B59B9 /* PFProduct.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFProduct.h; path = Parse.framework/Headers/PFProduct.h; sourceTree = "<group>"; };
+		8289B557E8546386615EAB72 /* PFSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFSession.h; path = Parse.framework/Headers/PFSession.h; sourceTree = "<group>"; };
+		84C0E4B24562C845F0AFC3DC /* Pods-applewatch-Bolts-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-applewatch-Bolts-dummy.m"; sourceTree = "<group>"; };
+		8650AF81EFDA496F87B8ADCB /* PFTwitterUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFTwitterUtils.h; path = Parse.framework/Headers/PFTwitterUtils.h; sourceTree = "<group>"; };
+		86742924B93D72136419A594 /* Pods-applewatch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-applewatch-dummy.m"; sourceTree = "<group>"; };
+		86CD5C3940A10B010C325E35 /* Bolts.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Bolts.m; path = Bolts/Common/Bolts.m; sourceTree = "<group>"; };
+		995CA5B621332B1CDAA4EFA7 /* BoltsVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BoltsVersion.h; path = Bolts/Common/BoltsVersion.h; sourceTree = "<group>"; };
+		9A7828419DC6FCB0BF9E3DC4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		A92387FC256D7D8A4A423DCE /* PFUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFUser.h; path = Parse.framework/Headers/PFUser.h; sourceTree = "<group>"; };
+		AE158797FED2057A44DA6416 /* Pods-applewatch-Parse-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-applewatch-Parse-Private.xcconfig"; sourceTree = "<group>"; };
+		B169462E531E59176C247E9F /* Bolts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Bolts.h; path = Bolts/Common/Bolts.h; sourceTree = "<group>"; };
+		B3CFC76797BF654C16CDFE06 /* Pods-applewatch-Bolts-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-applewatch-Bolts-prefix.pch"; sourceTree = "<group>"; };
+		B3E14D831419D63A36FC9E38 /* Pods-applewatch-Bolts-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-applewatch-Bolts-Private.xcconfig"; sourceTree = "<group>"; };
+		B98B92EC9AC7FFCA770973F1 /* Pods-applewatch-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-applewatch-resources.sh"; sourceTree = "<group>"; };
+		BBC739254009B402CD32C4AB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		BBEB3ADE01D5E9F5E443B380 /* PFRole.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFRole.h; path = Parse.framework/Headers/PFRole.h; sourceTree = "<group>"; };
+		BCDA2DA3A00E61B99A3872BD /* PFCloud.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFCloud.h; path = Parse.framework/Headers/PFCloud.h; sourceTree = "<group>"; };
+		BDC29F0CF144657049993740 /* Pods-applewatch-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-applewatch-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C7FA7B0E4E04B01C9C2991F8 /* libPods-applewatch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-applewatch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBC0B3A272D72A68E6DE8435 /* Parse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Parse.h; path = Parse.framework/Headers/Parse.h; sourceTree = "<group>"; };
+		DA8C7E1E226147C8EC5AB165 /* PFConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFConfig.h; path = Parse.framework/Headers/PFConfig.h; sourceTree = "<group>"; };
+		DAA023EE904D1DE90B21FE00 /* PFQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFQuery.h; path = Parse.framework/Headers/PFQuery.h; sourceTree = "<group>"; };
+		DF2CD26C2289FE191EC46627 /* Pods-applewatch-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-applewatch-acknowledgements.plist"; sourceTree = "<group>"; };
+		DF6845FB880612618D94B82B /* BFTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFTask.m; path = Bolts/Common/BFTask.m; sourceTree = "<group>"; };
+		E53AD9663B7B3CAC863642E7 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E5467E3D24A978A22BA5EC03 /* PFConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFConstants.h; path = Parse.framework/Headers/PFConstants.h; sourceTree = "<group>"; };
+		E5AD565A9EF33545AD3D6C39 /* Pods-applewatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-applewatch.debug.xcconfig"; sourceTree = "<group>"; };
+		E83F51F4DF272AAC25750179 /* Empty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Empty.m; sourceTree = "<group>"; };
+		E8E19ADC4A975F11E35EB32B /* libPods-applewatch-Bolts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-applewatch-Bolts.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F103F9AA743F97E2B6F7651B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		F1254DC1CAFBBBB3BE2635F3 /* BFExecutor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFExecutor.h; path = Bolts/Common/BFExecutor.h; sourceTree = "<group>"; };
+		F388F4451365AB83146F471A /* PF_Twitter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PF_Twitter.h; path = Parse.framework/Headers/PF_Twitter.h; sourceTree = "<group>"; };
+		F7B64E23835F63A1921603ED /* PFFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFFile.h; path = Parse.framework/Headers/PFFile.h; sourceTree = "<group>"; };
+		F9B7570A0FFA2C4833BB603B /* Pods-applewatch-Bolts.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-applewatch-Bolts.xcconfig"; sourceTree = "<group>"; };
+		FCFE10414F748F0A7E90DCBE /* BFExecutor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFExecutor.m; path = Bolts/Common/BFExecutor.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0871293963BD1A0C5957325B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				142CF9077938695BABE4F5D9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A470B167EC4BE462BC7E04C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64036D8A2B772A188A31148C /* AudioToolbox.framework in Frameworks */,
+				1E8B6E5BCF3807BC89CAA041 /* CFNetwork.framework in Frameworks */,
+				09FF420BEF406F6EE624D271 /* CoreGraphics.framework in Frameworks */,
+				693EFF4F3295B19983ACBB16 /* CoreLocation.framework in Frameworks */,
+				DF335AB0551DF593E10E04F9 /* Foundation.framework in Frameworks */,
+				D894535AD71D69886624C235 /* MobileCoreServices.framework in Frameworks */,
+				90FB7A5FA48F28AED6134640 /* QuartzCore.framework in Frameworks */,
+				121E4EE030C8B3E058580380 /* Security.framework in Frameworks */,
+				797D8590311A233B6D16BB70 /* StoreKit.framework in Frameworks */,
+				7E94C334D9C1F5FCA6587A97 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB963357EA41AB92C292023C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0221F620A205613A8F8E5686 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FD414C1BAB4DCA368DC8BC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B0175FF01AB36B0EBFA13ED /* libParse.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1437ED7243310B03E06BB91C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7FA7B0E4E04B01C9C2991F8 /* libPods-applewatch.a */,
+				E8E19ADC4A975F11E35EB32B /* libPods-applewatch-Bolts.a */,
+				63C7698EBE3BBB6645708DAD /* libPods-applewatch-Parse.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		156486335308347415FDB1AB /* Parse */ = {
+			isa = PBXGroup;
+			children = (
+				E83F51F4DF272AAC25750179 /* Empty.m */,
+				40E288ECFBB1408DC71D9799 /* PFACL.h */,
+				201E15F59FFD3D63000FE9E4 /* PFAnalytics.h */,
+				7A0E6C5044B0762B4605CEE9 /* PFAnonymousUtils.h */,
+				BCDA2DA3A00E61B99A3872BD /* PFCloud.h */,
+				DA8C7E1E226147C8EC5AB165 /* PFConfig.h */,
+				E5467E3D24A978A22BA5EC03 /* PFConstants.h */,
+				F7B64E23835F63A1921603ED /* PFFile.h */,
+				493A971DF2176F883D056F73 /* PFGeoPoint.h */,
+				64212AF91C2A57E7D7088F1F /* PFInstallation.h */,
+				3A3AE315C9E0B7FAA7AAEC94 /* PFNetworkActivityIndicatorManager.h */,
+				590958CAEF0CF2EAF559A876 /* PFNullability.h */,
+				5899A9DF648C610FFC9061F4 /* PFObject.h */,
+				81397254F76C6F4402E8198F /* PFObject+Subclass.h */,
+				81EC3946329B24A8DE6B59B9 /* PFProduct.h */,
+				54498E4E0DF46764EB8099D3 /* PFPurchase.h */,
+				302FC2521411571F9DC3DF34 /* PFPush.h */,
+				DAA023EE904D1DE90B21FE00 /* PFQuery.h */,
+				131941599BD1207A64681AE3 /* PFRelation.h */,
+				BBEB3ADE01D5E9F5E443B380 /* PFRole.h */,
+				8289B557E8546386615EAB72 /* PFSession.h */,
+				15BBF5CB08B2E7BD14A65DC5 /* PFSubclassing.h */,
+				8650AF81EFDA496F87B8ADCB /* PFTwitterUtils.h */,
+				A92387FC256D7D8A4A423DCE /* PFUser.h */,
+				F388F4451365AB83146F471A /* PF_Twitter.h */,
+				CBC0B3A272D72A68E6DE8435 /* Parse.h */,
+				0FD414C1BAB4DCA368DC8BC2 /* Frameworks */,
+				480A3F59B7916E3BE1159739 /* Support Files */,
+			);
+			path = Parse;
+			sourceTree = "<group>";
+		};
+		329EB0C9FD81D33091FC0143 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CAB2A21668FAA75C508F9926 /* Pods-applewatch */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		34DF3219003313BAE2EB3C70 = {
+			isa = PBXGroup;
+			children = (
+				E53AD9663B7B3CAC863642E7 /* Podfile */,
+				8424D8D2027007C88FA50BF9 /* Frameworks */,
+				638EF366B6E1A5EE503DC071 /* Pods */,
+				1437ED7243310B03E06BB91C /* Products */,
+				329EB0C9FD81D33091FC0143 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		480A3F59B7916E3BE1159739 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				57A0CAFAFF311798577D7B6B /* Pods-applewatch-Parse.xcconfig */,
+				AE158797FED2057A44DA6416 /* Pods-applewatch-Parse-Private.xcconfig */,
+				2D570E95ED561FA854E4F5D7 /* Pods-applewatch-Parse-dummy.m */,
+				3875702BC72D10FE852A9D12 /* Pods-applewatch-Parse-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-applewatch-Parse";
+			sourceTree = "<group>";
+		};
+		5C0F4CBCF6D0AB0986739230 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				F1254DC1CAFBBBB3BE2635F3 /* BFExecutor.h */,
+				FCFE10414F748F0A7E90DCBE /* BFExecutor.m */,
+				3E5C6AD1E11BCF1387AC1E29 /* BFTask.h */,
+				DF6845FB880612618D94B82B /* BFTask.m */,
+				3D06EC8EE229DCD1A92A6537 /* BFTaskCompletionSource.h */,
+				1A5A5E05C19F9773EB18AFE8 /* BFTaskCompletionSource.m */,
+				B169462E531E59176C247E9F /* Bolts.h */,
+				86CD5C3940A10B010C325E35 /* Bolts.m */,
+				995CA5B621332B1CDAA4EFA7 /* BoltsVersion.h */,
+			);
+			name = Tasks;
+			sourceTree = "<group>";
+		};
+		638EF366B6E1A5EE503DC071 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B35795C2E14498143CEC60E /* Bolts */,
+				156486335308347415FDB1AB /* Parse */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7B35795C2E14498143CEC60E /* Bolts */ = {
+			isa = PBXGroup;
+			children = (
+				FB931D34F5702992B8978AD6 /* Support Files */,
+				5C0F4CBCF6D0AB0986739230 /* Tasks */,
+			);
+			path = Bolts;
+			sourceTree = "<group>";
+		};
+		8424D8D2027007C88FA50BF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD5997E1990A4D563B497795 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CAB2A21668FAA75C508F9926 /* Pods-applewatch */ = {
+			isa = PBXGroup;
+			children = (
+				BDC29F0CF144657049993740 /* Pods-applewatch-acknowledgements.markdown */,
+				DF2CD26C2289FE191EC46627 /* Pods-applewatch-acknowledgements.plist */,
+				86742924B93D72136419A594 /* Pods-applewatch-dummy.m */,
+				451867027DEAA0688BFFE96D /* Pods-applewatch-environment.h */,
+				B98B92EC9AC7FFCA770973F1 /* Pods-applewatch-resources.sh */,
+				E5AD565A9EF33545AD3D6C39 /* Pods-applewatch.debug.xcconfig */,
+				2E7DEA83D406D1EF02677533 /* Pods-applewatch.release.xcconfig */,
+			);
+			name = "Pods-applewatch";
+			path = "Target Support Files/Pods-applewatch";
+			sourceTree = "<group>";
+		};
+		CD5997E1990A4D563B497795 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				58ED714048EB42178BEAF9B3 /* AudioToolbox.framework */,
+				F103F9AA743F97E2B6F7651B /* CFNetwork.framework */,
+				7DF17B91E66ACEFFC469A695 /* CoreGraphics.framework */,
+				5F436628EACEC1056CE2CE19 /* CoreLocation.framework */,
+				31364E081D1918868A7D3502 /* Foundation.framework */,
+				5A2510FB59CF54ECEE300C28 /* MobileCoreServices.framework */,
+				BBC739254009B402CD32C4AB /* QuartzCore.framework */,
+				9A7828419DC6FCB0BF9E3DC4 /* Security.framework */,
+				1A35A95C6573D00F4B22D786 /* StoreKit.framework */,
+				7CF747F5C6E6FE2C9C9C3219 /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		FB931D34F5702992B8978AD6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F9B7570A0FFA2C4833BB603B /* Pods-applewatch-Bolts.xcconfig */,
+				B3E14D831419D63A36FC9E38 /* Pods-applewatch-Bolts-Private.xcconfig */,
+				84C0E4B24562C845F0AFC3DC /* Pods-applewatch-Bolts-dummy.m */,
+				B3CFC76797BF654C16CDFE06 /* Pods-applewatch-Bolts-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-applewatch-Bolts";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4C7101C98FF0B3577A782968 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1C1F6933CE59F5191E4AEBC /* BFExecutor.h in Headers */,
+				EAA033189701DFA3CB807C44 /* BFTask.h in Headers */,
+				0901C98C5FB81F14C70D6655 /* BFTaskCompletionSource.h in Headers */,
+				2C93D325D07709A9E5CC58EE /* Bolts.h in Headers */,
+				AE04BFA143C8697C61139B04 /* BoltsVersion.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E58D79D3F0170E7ED095B5A7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6A8F916AA0499E430A6D984 /* PFACL.h in Headers */,
+				B711BB2AD4BF28BF6CC9C79D /* PFAnalytics.h in Headers */,
+				E6489D0A1B157CB40F436337 /* PFAnonymousUtils.h in Headers */,
+				7CFD5830B3C0DEC319B3EF1C /* PFCloud.h in Headers */,
+				DC5AD67C5C1A1C7ECE202E2B /* PFConfig.h in Headers */,
+				8F1C3146B5570A4A2CCB7D32 /* PFConstants.h in Headers */,
+				976B9384473109CB080C505D /* PFFile.h in Headers */,
+				8C79CAFCE6E9B0617B5236F6 /* PFGeoPoint.h in Headers */,
+				428216B1E1DF446FE47B1C91 /* PFInstallation.h in Headers */,
+				EE1CC4F784EBD2E78B7F51AA /* PFNetworkActivityIndicatorManager.h in Headers */,
+				61DA07D2B02BA64BD7A72495 /* PFNullability.h in Headers */,
+				0DE71D37658DDA632BD510A6 /* PFObject+Subclass.h in Headers */,
+				30B2EA0D9F4AB39D77469954 /* PFObject.h in Headers */,
+				96F30B12526C78E3E7F1336F /* PFProduct.h in Headers */,
+				7D02F83257950CEC52EA30CA /* PFPurchase.h in Headers */,
+				6161792F7755927943DF450A /* PFPush.h in Headers */,
+				F7F4DBBBA6F3115D4DA84106 /* PFQuery.h in Headers */,
+				70E8E541BE66E5723AC134A1 /* PFRelation.h in Headers */,
+				2E6CE6E0DC4CA725DE8F7EE9 /* PFRole.h in Headers */,
+				DB284FB4B78CC3186CFA9D36 /* PFSession.h in Headers */,
+				DAA0343FF2C7CA25717E3F81 /* PFSubclassing.h in Headers */,
+				F85B374E38C9D170492BD94E /* PFTwitterUtils.h in Headers */,
+				DAF7FBB39734262FB893EF95 /* PFUser.h in Headers */,
+				ABF34A22B8EDE880CD462A0C /* PF_Twitter.h in Headers */,
+				72963CC6C12C62152A44ADD0 /* Parse.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		045C2748B74C77E14AEF097E /* Pods-applewatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B1BB334DBF310E7057ABEFA /* Build configuration list for PBXNativeTarget "Pods-applewatch" */;
+			buildPhases = (
+				F020884C079B91AD1D7CC169 /* Sources */,
+				0871293963BD1A0C5957325B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D79751B15F13E7141BAD3FD /* PBXTargetDependency */,
+				6BA99081952F232BCC9D41B6 /* PBXTargetDependency */,
+			);
+			name = "Pods-applewatch";
+			productName = "Pods-applewatch";
+			productReference = C7FA7B0E4E04B01C9C2991F8 /* libPods-applewatch.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		0C9B88A43FA703C3D459E8F5 /* Pods-applewatch-Bolts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 368F286E263B1A7E3DE5A711 /* Build configuration list for PBXNativeTarget "Pods-applewatch-Bolts" */;
+			buildPhases = (
+				025590724A1780625625F176 /* Sources */,
+				DB963357EA41AB92C292023C /* Frameworks */,
+				4C7101C98FF0B3577A782968 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-applewatch-Bolts";
+			productName = "Pods-applewatch-Bolts";
+			productReference = E8E19ADC4A975F11E35EB32B /* libPods-applewatch-Bolts.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		70F0C052C2513D32A5E75795 /* Pods-applewatch-Parse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E70B4BBA86E45EBF81B122ED /* Build configuration list for PBXNativeTarget "Pods-applewatch-Parse" */;
+			buildPhases = (
+				54F2C64A02F9EC78C20C5015 /* Sources */,
+				A470B167EC4BE462BC7E04C4 /* Frameworks */,
+				E58D79D3F0170E7ED095B5A7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				554255DBE7A90933C449E14E /* PBXTargetDependency */,
+			);
+			name = "Pods-applewatch-Parse";
+			productName = "Pods-applewatch-Parse";
+			productReference = 63C7698EBE3BBB6645708DAD /* libPods-applewatch-Parse.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F98CE52560C5DB59ED7DD37 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = AC4E8E892DA88608569362CC /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 34DF3219003313BAE2EB3C70;
+			productRefGroup = 1437ED7243310B03E06BB91C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				045C2748B74C77E14AEF097E /* Pods-applewatch */,
+				0C9B88A43FA703C3D459E8F5 /* Pods-applewatch-Bolts */,
+				70F0C052C2513D32A5E75795 /* Pods-applewatch-Parse */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		025590724A1780625625F176 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60F3C057AB60FD7A7589B500 /* BFExecutor.m in Sources */,
+				024D5AD7E2DE6FB9A8AD29FE /* BFTask.m in Sources */,
+				D97BDF7BE33E9D21C1A04091 /* BFTaskCompletionSource.m in Sources */,
+				104C01073F0E3F1B462D34BA /* Bolts.m in Sources */,
+				9388EB2F27B9F0D66EEB8F98 /* Pods-applewatch-Bolts-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54F2C64A02F9EC78C20C5015 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39072D85A98CAAEA5672F124 /* Empty.m in Sources */,
+				141E0143544CB7AE5C59FF7F /* Pods-applewatch-Parse-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F020884C079B91AD1D7CC169 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECEE4E67A3650BD4E269125B /* Pods-applewatch-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		554255DBE7A90933C449E14E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-applewatch-Bolts";
+			target = 0C9B88A43FA703C3D459E8F5 /* Pods-applewatch-Bolts */;
+			targetProxy = 434A6A40242ECDAA0D1ADBD5 /* PBXContainerItemProxy */;
+		};
+		6BA99081952F232BCC9D41B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-applewatch-Parse";
+			target = 70F0C052C2513D32A5E75795 /* Pods-applewatch-Parse */;
+			targetProxy = D84828D89062FAA5E429DB4C /* PBXContainerItemProxy */;
+		};
+		7D79751B15F13E7141BAD3FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-applewatch-Bolts";
+			target = 0C9B88A43FA703C3D459E8F5 /* Pods-applewatch-Bolts */;
+			targetProxy = 5E33966442113A653161D38B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		121D3368D22538B860043D93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE158797FED2057A44DA6416 /* Pods-applewatch-Parse-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-applewatch-Parse/Pods-applewatch-Parse-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		55AF27E1A39BB3ECF7B7068B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3E14D831419D63A36FC9E38 /* Pods-applewatch-Bolts-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-applewatch-Bolts/Pods-applewatch-Bolts-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		AAA1E5579521DBA284231F8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3E14D831419D63A36FC9E38 /* Pods-applewatch-Bolts-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-applewatch-Bolts/Pods-applewatch-Bolts-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AD60C4D6744951BC6D7FBF7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5AD565A9EF33545AD3D6C39 /* Pods-applewatch.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B56B582161B2F15B2F66A079 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C2731BD02389BA198198752A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C6F147E6125C1378D189B514 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE158797FED2057A44DA6416 /* Pods-applewatch-Parse-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-applewatch-Parse/Pods-applewatch-Parse-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		DCF699EFEA75CE23CE2BECFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E7DEA83D406D1EF02677533 /* Pods-applewatch.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		368F286E263B1A7E3DE5A711 /* Build configuration list for PBXNativeTarget "Pods-applewatch-Bolts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAA1E5579521DBA284231F8D /* Debug */,
+				55AF27E1A39BB3ECF7B7068B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B1BB334DBF310E7057ABEFA /* Build configuration list for PBXNativeTarget "Pods-applewatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD60C4D6744951BC6D7FBF7F /* Debug */,
+				DCF699EFEA75CE23CE2BECFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC4E8E892DA88608569362CC /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2731BD02389BA198198752A /* Debug */,
+				B56B582161B2F15B2F66A079 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E70B4BBA86E45EBF81B122ED /* Build configuration list for PBXNativeTarget "Pods-applewatch-Parse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				121D3368D22538B860043D93 /* Debug */,
+				C6F147E6125C1378D189B514 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F98CE52560C5DB59ED7DD37 /* Project object */;
+}
